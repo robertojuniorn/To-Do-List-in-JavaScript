@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(70, 142, 236);
+    font: normal 15pt Arial;
+}
+
+h1{
+    text-align: center;
+    margin: 50px;
+    color:gold;
+}
+
+paragraph {
+    text-align: center;
+}
+
+#form {
+    text-align: center;
+    margin: 40px;
+    padding: 50px;
+}
+
+#inputText {
+    width: 200px;
+    padding: 10px ;
+}
+
+#addButton {
+    width: 70px;
+    padding: 10px ;
+}

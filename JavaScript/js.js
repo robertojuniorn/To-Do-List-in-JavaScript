@@ -1,16 +1,16 @@
 let inputText = document.getElementById('inputText')
-let addbutton = document.getElementById('addbutton');
+let addButton = document.getElementById('addButton');
 let res = document.getElementById('res');
 
 // This code add a new paragraph 
-addbutton.addEventListener('click', function(){
-   let paragraph = document.createElement('p');
+addButton.addEventListener('click', function(){
+   var paragraph = document.createElement('p');
    paragraph.innerText = inputText.value;
    res.appendChild(paragraph);
    inputText.value = '';
 
    //This code removes the paragraph by double clicking on the element 
-   paragraph.addEventListener('click', function(){
+   paragraph.addEventListener('dblclick', function(){
        res.removeChild(paragraph);
    })
 })
