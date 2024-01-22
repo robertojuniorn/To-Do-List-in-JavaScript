@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
     <link rel="stylesheet" href="./css/style.css">
     <title>The Simple To Do List</title>
 </head>
 <body>
-    <div class="content">
-        <div class="todo">
-            <input type="text" name="dados" id="dados">
-            <button id="btn" >Enviar</button>
-        </div>
+    <div class="container">
 
-        <ul class="list-tasks">
-            
-        </ul>
+        <div class="date">
+            <p>Data</p>
+        </div>
+        <div class="task-input">
+            <input type="text" name="dados" id="dados" placeholder="Tasks">
+            <button id="btn" >Enviar</button> 
+        </div>
+        <div class="Task-view">
+            <ul class="list-tasks">
+               
+            </ul>
+        </div>
     </div>
     <script src="./js/js.js"></script>
 </body>

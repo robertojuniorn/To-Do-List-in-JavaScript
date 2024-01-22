@@ -1,14 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border: none;
 }
 
-.content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid red;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+}
 
+
+.container {
+  background: #1d3557;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  height: 60vh;
+  border-radius: 6px;
+}
+
+
+.content .task-input {
+  display: flex;
+  gap: 40px;
+}
+
+.content .task-input input {
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  padding: 8px 60px;
+}
+
+.date {
+  margin: 30px 0 30px 20px;
+  color: #fff;
+}
+
+.task-input input {
+ outline: none;
+ font-size: 14px;
+ font-weight: 400;
+ color: #333;
+ border-radius: 5px;
+ border: 1px solid #aaa;
+ padding: 0 15px;
+ height: 38px;
+ width: 300px;
+ margin: 8px 0;
+}
+
+.task-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px 0 60px 20px;
+  text-align: center;
+}
+
+#btn {
+  background: red;
+  padding: 10px 30px;
+  background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: #fff;
+  border-radius: 4px;
+}
+
+.task {
+  background: #fff;
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+  color: #004e98;
+  cursor: pointer;
+}
+
+i {
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.task:hover i {
+  opacity: 1;
 }
